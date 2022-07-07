@@ -31,7 +31,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: test
-        run: solc -V
+        run: solc --version
       - name: download v0.8.15
         uses: ./
         with:
