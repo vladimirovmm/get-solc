@@ -20,7 +20,7 @@ runs:
   using: "composite"
   steps:
     - name: Download
-      run: $GITHUB_ACTION_PATH/solc_download.sh
+      run: sh $GITHUB_ACTION_PATH/solc_download.sh
       shell: bash
       env:
         SOLC_VERSION: ${{inputs.version}}
